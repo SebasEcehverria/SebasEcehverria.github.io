@@ -2,18 +2,48 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P9NDJF5JH4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-P9NDJF5JH4');
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sebass's Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
+  <script src="dark-mode.js" defer></script>
 </head>
 <body>
-  <h1>Sebass Echeverria</h1>
-  <p class="bio">I am a Computer Science and a Math major along with 3 certifiicates. I am also on the Wrestling team as SOU.</p>
-  <h2>Things I like</h2>
-  <ul>
-    <li>Fishing</li>
-    <li>Crabbing</li>
-    <li>Hanging out with friends</li>
-  </ul>
- <a href="https://sou.edu">SOU</a>
+  <header class="site-header">
+    <span class="wordmark">SE / Personal page</span>
+    <button id="dark-mode-toggle" type="button" aria-pressed="false"><i class="fa-solid fa-moon" aria-hidden="true"></i> Dark mode</button>
+  </header>
+  <main>
+    <section aria-labelledby="page-title">
+      <p class="eyebrow">Student. Wrestler. Outdoor enthusiast.</p>
+      <h1 id="page-title">Sebass Echeverria</h1>
+      <img class="hero-image" src="coastal-landscape.svg" width="960" height="420" alt="Illustration of a coastal bay with evergreen trees, mountains, and a golden sun.">
+      <p class="bio">I am a Computer Science and Math major pursuing three certificates. I am also on the wrestling team at SOU.</p>
+    </section>
+    <section aria-labelledby="interests-title">
+      <p class="eyebrow">Away from the classroom</p>
+      <h2 id="interests-title">Things I like</h2>
+      <ul class="interest-list">
+        <li><i class="fa-solid fa-fish" aria-hidden="true"></i><span>Fishing</span></li>
+        <li><i class="fa-solid fa-water" aria-hidden="true"></i><span>Crabbing</span></li>
+        <li><i class="fa-solid fa-user-group" aria-hidden="true"></i><span>Hanging out with friends</span></li>
+      </ul>
+      <a href="https://sou.edu">Explore Southern Oregon University &rarr;</a>
+    </section>
+  </main>
+  <footer>
+    <h2>Get in touch</h2>
+    <!-- Replace with your preferred public contact address. -->
+    <p>Email: <span class="muted">[Add your contact email]</span></p>
+    <p class="muted">Sebass Echeverria &middot; Southern Oregon University</p>
+  </footer>
 </body>
 </html>
